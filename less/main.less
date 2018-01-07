@@ -1,3 +1,90 @@
 // Importe der Bootstrap und Font-Awesome Less-Files
 @import "vendors/bootstrap/bootstrap.less";
 @import "vendors/font-awesome/font-awesome.less";
+
+// Variablen für Farben
+@lyfes-gruen: rgb(170, 195, 15);
+@lyfes-blau: rgb(20, 145, 160);
+@lyfes-orange: rgb(240, 140, 0);
+@lyfes-black: rgb(60, 60, 65);
+@lyfes-hellgrau: rgb(248, 248, 248);
+////////////////////////
+
+// Texte
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Nunito',Helvetica,Arial,sans-serif;
+	letter-spacing: 1.5px;
+}
+
+p {
+  font-family: 'Nunito',Helvetica,Arial,sans-serif;
+}
+
+a {
+  font-family: 'Nunito',Helvetica,Arial,sans-serif;
+}
+////////////////////////
+
+// Allgemeines
+body {
+  margin: auto;
+  border-top: 4px solid @lyfes-orange;
+}
+
+h1 {
+  font-family: 'Nunito'
+}
+
+.head {
+  margin-top: 1%;
+}
+////////////////////////
+
+// Navigation
+.navbar {
+  margin-bottom: 0%;
+  border-radius: 0;
+  height:250px;
+}
+
+
+////////////////////////
+
+// Slider
+.slider {
+  margin-bottom: 26px;
+}
+
+.carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+////////////////////////
+
+// Testimonial
+.testimonial{
+  background-color: @lyfes-blau;
+  height: 200px;
+}
+////////////////////////
+
+
+
+// Highlight part
+.highlight-part {
+  background-color: @lyfes-hellgrau;
+  color: @lyfes-black;
+}
